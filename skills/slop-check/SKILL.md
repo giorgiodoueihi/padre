@@ -111,7 +111,7 @@ if (!order.id) return null;
 ### Prioritised Action List
 
 Highest impact first:
-- [ ] `[SEVERITY]` What to fix, where
+- [SEVERITY] What to fix, where
 
 ## Rules
 
