@@ -10,7 +10,7 @@ Personal Claude skills, packaged as a single plugin (`padre`) in a single-plugin
 
 `humaniser` started as a fork of [blader/humanizer](https://github.com/blader/humanizer) (MIT, licence alongside it) and is maintained independently here. Upstream is not tracked.
 
-`ponytail` is the core skill from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT, licence alongside it), copied at commit `09c434a`. Its sibling skills, hooks and status line are not included. Upstream is not tracked.
+`ponytail` is the core skill from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT, licence alongside it), adapted from commit `09c434a` to Anthropic's skill authoring guidelines. Its sibling skills, hooks and status line are not included. Upstream is not tracked.
 
 ## Install
 
