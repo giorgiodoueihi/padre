@@ -8,7 +8,7 @@ Personal Claude skills, packaged as a single plugin (`padre`) in a single-plugin
 - `.claude-plugin/plugin.json` is the plugin manifest.
 - `.claude-plugin/marketplace.json` makes this repo installable as a marketplace.
 
-`humanizer` is a copy of [blader/humanizer](https://github.com/blader/humanizer) (MIT, licence alongside it). Refresh it by hand when upstream changes.
+`humaniser` started as a fork of [blader/humanizer](https://github.com/blader/humanizer) (MIT, licence alongside it) and is maintained independently here. Upstream is not tracked.
 
 ## Install
 

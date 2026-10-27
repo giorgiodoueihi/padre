@@ -1,7 +1,7 @@
 {
   "name": "padre",
-  "description": "Giorgio's personal skills: slop-check and humanizer.",
-  "version": "1.0.1",
+  "description": "Giorgio's personal skills: slop-check and humaniser.",
+  "version": "1.1.0",
   "author": {
     "name": "Giorgio Doueihi"
   },
