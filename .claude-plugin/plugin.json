@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "padre",
+  "description": "Giorgio's personal skills: slop-check and humanizer.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Giorgio Doueihi"
+  },
+  "repository": "https://github.com/giorgiodoueihi/padre"
+}

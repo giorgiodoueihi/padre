@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "padre",
+  "owner": {
+    "name": "Giorgio Doueihi"
+  },
+  "description": "Personal skills, shared across Claude Code, Claude Desktop and Claude in the cloud.",
+  "plugins": [
+    {
+      "name": "padre",
+      "source": "./",
+      "description": "slop-check and humanizer."
+    }
+  ]
+}

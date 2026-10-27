@@ -1,19 +1,34 @@
 # padre
 
-Personal Claude Code skills, kept in one repo so they can be synced between machines.
+Personal Claude skills, packaged as a single plugin (`padre`) in a single-plugin marketplace, so the same skills reach Claude Code, Claude Desktop and Claude in the cloud.
 
-## Setup on a new machine
+## Layout
 
-Clone this repo, then point `~/.claude/skills` at it with a symlink instead of copying files:
+- `skills/<name>/SKILL.md` holds one skill each.
+- `.claude-plugin/plugin.json` is the plugin manifest.
+- `.claude-plugin/marketplace.json` makes this repo installable as a marketplace.
+
+`humanizer` is a copy of [blader/humanizer](https://github.com/blader/humanizer) (MIT, licence alongside it). Refresh it by hand when upstream changes.
+
+## Install
+
+In Claude Code:
 
 ```
-git clone git@github.com:<you>/padre.git
-rm -rf ~/.claude/skills
-ln -s /path/to/padre ~/.claude/skills
+/plugin marketplace add giorgiodoueihi/padre
+/plugin install padre@padre
 ```
 
-Claude Code will pick up skills straight from the repo, so edits just need a commit and push to reach the other machine, then a `git pull` there.
+On a machine with the repo already cloned, `/plugin marketplace add /path/to/padre` works too.
 
-## Adding a skill
+In Claude Desktop and Claude on the web, add the same GitHub repo as a plugin marketplace from the plugin settings, then install `padre`.
 
-Create a new directory with a `SKILL.md` inside, commit it, and push. On the other machine, pull to get it.
+## Adding or changing a skill
+
+Create `skills/<name>/SKILL.md`, bump `version` in `.claude-plugin/plugin.json`, commit and push. Each client picks up the change on its next marketplace update (`/plugin marketplace update padre` in Claude Code).
+
+Skills from this plugin are namespaced, for example `padre:slop-check`.
+
+## Do not symlink this repo to `~/.claude/skills`
+
+Claude's account sync writes its own `synced/` folder into `~/.claude/skills`, which would land inside this repo. Leave `~/.claude/skills` as a normal directory.
