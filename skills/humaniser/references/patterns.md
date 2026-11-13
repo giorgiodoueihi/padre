@@ -6,7 +6,7 @@ Based on Wikipedia's "Signs of AI writing" (WikiProject AI Cleanup). Read the se
 
 - Content: significance inflation, notability, -ing tails, promotional language, vague attribution, challenges sections
 - Language: AI vocabulary, copula avoidance, negative parallelism, rule of three, synonym cycling, false ranges, passive voice
-- Style: em and en dashes, boldface, inline-header lists, title case, emojis, curly quotes
+- Style: em and en dashes, boldface, inline-header lists, title case, emojis, curly quotes, faux wrapping
 - Communication: chatbot artefacts, cutoff disclaimers and gap-filling, sycophancy
 - Filler and hedging: filler phrases, hedging, upbeat conclusions, hyphenation, authority tropes, signposting, fragmented headers, diff-anchored writing, staccato drama, aphorisms, rhetorical openers
 - Detection guidance: what not to flag, signs of human writing
@@ -60,6 +60,10 @@ Based on Wikipedia's "Signs of AI writing" (WikiProject AI Cleanup). Read the se
 **Emojis.** Remove from headings and bullets.
 
 **Curly quotes.** Normalise to straight quotes in the rewrite, unless inside a quotation reproduced from a source.
+
+**Faux wrapping.** Line breaks the writer forces instead of letting the display wrap: newlines in the middle of a Markdown or HTML paragraph, `<br>` splitting a sentence or a table cell across lines, prose hard-wrapped at 72 or 80 columns, and CSS that caps paragraph width (`max-width: 65ch`) narrower than the layout around it. Write each paragraph as one line, separate values in a cell with a comma or a space, and let the browser or editor wrap. Keep breaks that carry meaning, such as addresses, verse and code, and keep hard wraps where the format or the project's own rules require them.
+> Before: `<td>156.51 hrs<br>$17,252.29</td>`
+> After: `<td>156.51 hrs, $17,252.29</td>`
 
 ## Communication
 
